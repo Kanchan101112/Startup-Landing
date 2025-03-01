@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            width: 736px;
+            height: 100%;
+
+        }
+        .head{
+    width: 736px;
+    height: 78px;
+    color: #FFFFFF;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 78.02px;
+}
+.navbar {
+    width: 1728px;
+    height: 86px;
+    background-color: #FCAF02;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: fixed;  /* Fix at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;  /* Ensure it's above other content */
+}
+.logo{
+    
+    color: #000000; 
+    font-family: Montserrat;
+font-weight: 700;
+font-size: 32px;
+line-height: 39.01px;
+letter-spacing: 0%;
+text-decoration: underline;
+text-decoration-style: solid;
+text-underline-offset: Auto;
+text-decoration-thickness: Auto;
+
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 400;
+    color: black;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
+        .intro-text{
+            width: 917px;
+height: 238px;
+top: 285px;
+left: 63px;
+font-family: Montserrat;
+font-weight: 400;
+font-size: 28px;
+line-height: 34.13px;
+letter-spacing: 0%;
+color: #FFFFFF;
+
+}
+        .intro-image img {
+            margin-top: 50px; /* Adjust the spacing */
+            scale: crop;
+            width: 697px;
+height: 482px;
+top: 173px;
+left: 1678px;
+transform: rotateY(180deg);
+
+        }
+
+        .btn {
+    width: 323px;
+    height: 66px;
+    background-color: #FCAF02;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 500px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        .contact {
+            padding: 50px;
+            width: 369;
+height: 78;
+top: 771px;
+left: 63px;
+font-family: Montserrat;
+font-weight: 700;
+font-size: 64px;
+line-height: 78.02px;
+letter-spacing: 0%;
+color: #FCAF02;
+        }
+  
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+       .name-input {
+            width: 1570px;
+height: 82px;
+top: 913px;
+left: 63px;
+border-radius: 100px;
+border: 2px solid #FCAF02;
+background-color: #000000;
+font-family: Montserrat;
+font-weight: 400;
+font-size: 28px;
+line-height: 34.13px;
+letter-spacing: 0%;
+color: #FCAF02;
+        }
+        .name-input::placeholder{
+            color: #FCAF02;
+        }
+        .email-input{
+            width: 1570px;
+height: 82px;
+top: 1045px;
+left: 63px;
+border-radius: 100px;
+border: 2px solid #FCAF02;
+color: #FCAF02;
+background-color: #000000;
+font-family: Montserrat;
+font-weight: 400;
+font-size: 28px;
+line-height: 34.13px;
+letter-spacing: 0%;
+
+        }.email-input::placeholder{
+            color: #FCAF02;}
+        .mobile-input{width: 730px;
+height: 82px;
+top: 1177px;
+left: 63px;
+border-radius: 100px;
+border: 2px solid #FCAF02;
+color: #FCAF02;
+background-color: #000000;
+font-family: Montserrat;
+font-weight: 400;
+font-size: 28px;
+line-height: 34.13px;
+letter-spacing: 0%;
+}.mobile-input::placeholder{
+    color: #FCAF02;}
+.city-input{width: 767px;
+height: 82px;
+top: 1177px;
+left: 866px;
+border-radius: 100px;
+border: 2px solid #FCAF02;
+color: #FCAF02;
+background-color: #000000;
+font-family: Montserrat;
+font-weight: 400;
+font-size: 28px; 
+line-height: 34.13px;
+letter-spacing: 0%;
+}.city-input::placeholder{
+    color: #FCAF02;}
+        input:focus {
+            outline: none;
+        }
+
+        .table-section {
+            padding: 50px;
+        }
+
+        table {
+            width: 1582px;
+height: 755px;
+top: 1524px;
+left: 75px;
+border-width: 2px;
+border: 1px solid #FCAF02;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            color: #FCAF02;
+            border-right: 1px solid #FCAF02;
+
+        }
+
+        th{ border-top: 2px solid #FFC107; /* Border at the top for the header */
+    border-bottom: 2px solid #FFC107; /* Border at the bottom for the header */
+}
+
+        tfoot {
+            background-color: #f0a500;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Startup</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <header class="intro">
+        <div class="intro-text">
+            <h1 class="head">Startup Landing Page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button class="btn">Login</button>
+        </div>
+        <div class="intro-image">
+            <img src="https://s3-alpha-sig.figma.com/img/1bfe/0656/5ce73b370dc5f157ffb73c5df166e15b?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=r4piV4AiC58op6QtjdBXM1l3WNBr97bYsF2MHJxEZMXd6qdxHsXn~XhXGBfvTZNfAK1EQP89b60~GJF0vjTPAN-Z5ZySxjMMr~5Pr-S2dnzjuUrl8YdvFUsY10ynBqfyf510t7PxyHLb~tzAgD1G9wvCCcJwczLEuCSJDoBESftYjlnQXnEkD-hrJrBTqiYNYnHGSANfZkGaj6AD80fN3~q4UAUrsLOkg3f8vOWIl8Hq3MJxw9dw~b~nl7kxcQ~F0~svewvhDun~dv-Qze5VBkk3CJhPAqsDcbS2ZEZYXosJk0mRJLJK~domYPFvt~0OqEdPgSDoj9EfTaqHLdkkiQ__" alt="Jeff Bezos">
+        </div>
+    </header>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name" class="name-input">
+            <input type="email" placeholder="Email" class="email-input">
+            <div class="form-group">
+                <input type="text" placeholder="Mobile Number" class="mobile-input">
+                <input type="text" placeholder="City" class="city-input">
+            </div>
+            <button type="submit" class="btn">Submit Form</button>
+        </form>
+    </section>
+    <section class="table-section">
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Startup Name</th>
+                    <th>Startup Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>WowIndia</td>
+                    <td>A startup with WOW ideas</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum Text</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum Text</td>
+                </tr><tr>
+                    <td>2</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum Text</td>
+                </tr><tr>
+                    <td>2</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum Text</td>
+                </tr><tr>
+                    <td>2</td>
+                    <td>Lorem Ipsum</td>
+                    <td>Lorem Ipsum Text</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>.00</td>
+                    <td>Final Footer</td>
+                    <td>Lorem Ipsum Text</td>                </tr>
+            </tfoot>
+        </table>
+    </section>
+</body>
+</html>
